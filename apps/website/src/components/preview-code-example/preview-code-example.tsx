@@ -12,12 +12,12 @@ export const PreviewCodeExample = component$(() => {
           Code
         </Tab>
       </TabList>
-      <TabPanel class="rounded-b-xl  p-12 bg-slate-700">
+      <TabPanel class="rounded-b-xl  p-12 bg-slate-300 dark:bg-slate-700">
         <section class="flex flex-col items-center">
           <Slot name="actualComponent" />
         </section>
       </TabPanel>
-      <TabPanel class="rounded-b-xl  p-12 bg-slate-900">
+      <TabPanel class="rounded-b-xl bg-slate-300 p-12 dark:bg-slate-700">
         <section class="overflow-auto">
           <Slot name="codeExample" />
         </section>

@@ -1,19 +1,19 @@
 import {
   $,
-  component$,
-  createContextId,
   HTMLAttributes,
   PropFunction,
   QRL,
   Signal,
   Slot,
-  useVisibleTask$,
+  component$,
+  createContextId,
   useContext,
   useContextProvider,
+  useId,
   useSignal,
   useStore,
   useStylesScoped$,
-  useId,
+  useVisibleTask$,
 } from '@builder.io/qwik';
 
 export type AccordionProps = HTMLAttributes<HTMLElement>;
@@ -68,7 +68,7 @@ export const AccordionItem = component$((props: AccordionItemProps) => {
   useStylesScoped$(`
       div.item .content {
         display: none;
-      }
+      }asd
       div.item>button {
         border-bottom: 1px solid #e2e8f0;
         display: flex;
